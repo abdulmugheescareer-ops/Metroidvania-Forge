@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://jl8xm6vayrxi"]
+[gd_resource type="TileSet" format=3 uid="uid://jl8xm6vayrxi"]
 
 [ext_resource type="Texture2D" uid="uid://j0wibshqx3kx" path="res://levels/tilesets/sprites/forgotten_forest_example_tileset.png" id="1_uh0r3"]
 
@@ -1188,7 +1188,6 @@ texture_region_size = Vector2i(32, 32)
 28:14/0 = 0
 29:14/0 = 0
 30:14/0 = 0
-2:15/0 = 0
 19:15/0 = 0
 20:15/0 = 0
 21:15/0 = 0
@@ -1199,6 +1198,8 @@ texture_region_size = Vector2i(32, 32)
 28:15/0 = 0
 29:15/0 = 0
 30:15/0 = 0
+19:8/0 = 0
+2:15/0 = 0
 
 [resource]
 tile_size = Vector2i(32, 32)
