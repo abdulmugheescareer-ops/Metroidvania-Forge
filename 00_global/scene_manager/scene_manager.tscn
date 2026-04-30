@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://crexy2y1bn4gq"]
+
+[ext_resource type="Script" uid="uid://b1hclxc1k4kdh" path="res://00_global/scene_manager/scene_manager.gd" id="1_4wb0k"]
+
+[node name="SceneManager" type="CanvasLayer" unique_id=984068780]
+script = ExtResource("1_4wb0k")

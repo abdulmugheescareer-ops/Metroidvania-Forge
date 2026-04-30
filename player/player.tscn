@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://cfa3xni5hj64u"]
+[gd_scene format=3 uid="uid://cfa3xni5hj64u"]
 
 [ext_resource type="Script" uid="uid://dvfrhbtm2nhth" path="res://player/scripts/player.gd" id="1_oul6g"]
 [ext_resource type="Script" uid="uid://55xw6dqq6fdy" path="res://player/states/idle.gd" id="2_rkbax"]
@@ -111,52 +111,52 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_boad6"]
 size = Vector2(16, 3)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" unique_id=1609291570 groups=["Player"]]
 z_index = 1
-collision_layer = 0
+collision_layer = 16
 collision_mask = 3
 floor_constant_speed = true
 floor_snap_length = 3.5
 script = ExtResource("1_oul6g")
 
-[node name="States" type="Node" parent="."]
+[node name="States" type="Node" parent="." unique_id=1729905352]
 
-[node name="Idle" type="Node" parent="States"]
+[node name="Idle" type="Node" parent="States" unique_id=2139148567]
 unique_name_in_owner = true
 script = ExtResource("2_rkbax")
 
-[node name="Run" type="Node" parent="States"]
+[node name="Run" type="Node" parent="States" unique_id=843560117]
 unique_name_in_owner = true
 script = ExtResource("3_g1dw6")
 
-[node name="Jump" type="Node" parent="States"]
+[node name="Jump" type="Node" parent="States" unique_id=492530165]
 unique_name_in_owner = true
 script = ExtResource("4_qjkh3")
 
-[node name="Fall" type="Node" parent="States"]
+[node name="Fall" type="Node" parent="States" unique_id=1734128228]
 unique_name_in_owner = true
 script = ExtResource("5_g6k8r")
 cayote_time = 0.125
 
-[node name="Crouch" type="Node" parent="States"]
+[node name="Crouch" type="Node" parent="States" unique_id=139271298]
 unique_name_in_owner = true
 script = ExtResource("6_g6k8r")
 
-[node name="Sprite" type="Sprite2D" parent="."]
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1118376850]
 position = Vector2(0, -40)
 texture = ExtResource("7_boad6")
 hframes = 16
 vframes = 4
 
-[node name="CollisionStand" type="CollisionShape2D" parent="."]
+[node name="CollisionStand" type="CollisionShape2D" parent="." unique_id=25371412]
 position = Vector2(0, -23)
 shape = SubResource("CapsuleShape2D_boad6")
 
-[node name="CollisionCrouch" type="CollisionShape2D" parent="."]
+[node name="CollisionCrouch" type="CollisionShape2D" parent="." unique_id=12431716]
 position = Vector2(0, -15)
 shape = SubResource("CapsuleShape2D_rgyib")
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=1901522384]
 offset_left = -37.0
 offset_top = -69.0
 offset_right = 38.0
@@ -166,13 +166,11 @@ text = "label"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_ebec5")
-}
-autoplay = "idle"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2026284655]
+libraries/ = SubResource("AnimationLibrary_ebec5")
+autoplay = &"idle"
 
-[node name="OneWayPlatformShapeCast" type="ShapeCast2D" parent="."]
+[node name="OneWayPlatformShapeCast" type="ShapeCast2D" parent="." unique_id=1663816930]
 position = Vector2(0, -3)
 enabled = false
 shape = SubResource("RectangleShape2D_boad6")
@@ -180,5 +178,5 @@ target_position = Vector2(0, 6)
 max_results = 12
 collision_mask = 2
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1883136320]
 position = Vector2(0, -39)
