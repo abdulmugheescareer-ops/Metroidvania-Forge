@@ -37,3 +37,4 @@ position = Vector2(1152, 40)
 size = 20
 location = 1
 target_level = "uid://c7ipemkc64ea1"
+target_area_name = "LevelTransition2"
