@@ -16,7 +16,7 @@ height = 494
 metadata/_custom_type_script = "uid://owwdq5mm62n4"
 
 [node name="Player" parent="." unique_id=1508846496 instance=ExtResource("2_tq8do")]
-position = Vector2(-232, 176)
+position = Vector2(-250, 183)
 
 [node name="Background" type="TileMapLayer" parent="." unique_id=1310410939]
 tile_map_data = PackedByteArray("AAD6/wcAAAALAAcAAAD6/wgAAAALAAgAAAD6/wkAAAALAAcAAAD6/woAAAALAAwAAAD7/wcAAAANAAcAAAD7/wgAAAANAAgAAAD7/wkAAAAMAAoAAAD7/woAAAAMAAsAAAD8/wcAAAANAAcAAAD8/wgAAAANAAgAAAD8/wkAAAANAAoAAAD8/woAAAANAAsAAAD9/wcAAAAMAAcAAAD9/wgAAAAMAAgAAAD9/wkAAAAMAAoAAAD9/woAAAAMAAsAAAD+/wcAAAAOAAcAAAD+/wgAAAAOAAgAAAD+/wkAAAAOAAcAAAD+/woAAAANAAsAAAD6/wYAAAALAAYAAAD7/wYAAAAMAAYAAAD8/wYAAAANAAYAAAD9/wYAAAANAAYAAAD+/wYAAAAOAAYAAAA=")
