@@ -31,7 +31,7 @@ func _ready() -> void:
  
 func _on_player_entered(_n : Node2D) -> void:
 	# Transition to the attached level
-	SceneManager.transition_scene(target_level, target_area_name, get_offset(_n), "left")
+	SceneManager.transition_scene(target_level, target_area_name, get_offset(_n), get_transition_direction())
 	pass
 
 
@@ -78,17 +78,28 @@ func get_offset(player: Node2D) -> Vector2:
 	
 	if location == SIDE.LEFT or location == SIDE.RIGHT:
 		offset.y = player_pos.y - self.global_position.y
-		if location == SIDE_LEFT:
+		if location == SIDE.LEFT:
 			offset.x = -12
 		else:
 			offset.x = 12
 	
 	else:
 		offset.x = player_pos.x - self.global_position.x
-		if location == SIDE_TOP:
+		if location == SIDE.TOP:
 			offset.y = -2
 		else:
 			offset.y = 48
 	
 	return offset
-	
+
+
+func get_transition_direction() -> String:
+	match location:
+		SIDE.LEFT:
+			return "left"
+		SIDE.RIGHT:
+			return "right"
+		SIDE.TOP:
+			return "up"
+		_:
+			return "down"
