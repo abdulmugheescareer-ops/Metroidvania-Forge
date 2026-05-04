@@ -32,7 +32,6 @@ func _ready() -> void:
 func _on_player_entered(_n : Node2D) -> void:
 	# Transition to the attached level
 	SceneManager.transition_scene(target_level, target_area_name, get_offset(_n), get_transition_direction())
-	print("Entered transition at:", name, " -> ", target_level)
 	pass
 
 
