@@ -1,0 +1,26 @@
+[gd_scene format=4 uid="uid://c42yl16w6tr4n"]
+
+[ext_resource type="Script" uid="uid://owwdq5mm62n4" path="res://generals/scripts/level_bounds.gd" id="1_14va3"]
+[ext_resource type="TileSet" uid="uid://jl8xm6vayrxi" path="res://levels/tilesets/forgotten_forest.tres" id="2_63f04"]
+
+[node name="01" type="Node2D" unique_id=1662746434]
+
+[node name="LevelBounds" type="Node2D" parent="." unique_id=59906747]
+z_index = 256
+script = ExtResource("1_14va3")
+metadata/_custom_type_script = "uid://owwdq5mm62n4"
+
+[node name="Background" type="TileMapLayer" parent="." unique_id=1421443804]
+tile_set = ExtResource("2_63f04")
+collision_enabled = false
+
+[node name="OneWayPlatform" type="TileMapLayer" parent="." unique_id=487431311]
+tile_set = ExtResource("2_63f04")
+
+[node name="Bushes&Rocks" type="TileMapLayer" parent="." unique_id=1042634689]
+tile_set = ExtResource("2_63f04")
+collision_enabled = false
+
+[node name="Ground&Walls" type="TileMapLayer" parent="." unique_id=1798932502]
+tile_map_data = PackedByteArray("AAAOAAYAAAAbAAAAAAANAAYAAAAcAAAAAAANAAcAAAAbAAMAAAAOAAcAAAAeAAQAAAAOAAgAAAAbAAUAAAANAAgAAAAcAAUAAAA=")
+tile_set = ExtResource("2_63f04")
